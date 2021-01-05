@@ -15,12 +15,13 @@ const getStrCharCodes = str => {
 
 describe('src/utils/index.js', () => {
   it('根据换行符切割字符串', () => {
-    const str =
-      'It should be split two lines.\n' + 'It should be split two lines.'
+    const str = `It should be split four lines.\r\nIt should be split four lines.\rIt should be split four lines.\nIt should be split four lines.`
     const result = split2Lines(str)
 
-    expect(result[0]).toBe('It should be split two lines.')
-    expect(result[1]).toBe('It should be split two lines.')
+    expect(result[0]).toBe('It should be split four lines.')
+    expect(result[1]).toBe('It should be split four lines.')
+    expect(result[2]).toBe('It should be split four lines.')
+    expect(result[3]).toBe('It should be split four lines.')
   })
 
   it('当Backspace出现在换行符后不会切割字符串', () => {

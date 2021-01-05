@@ -1,6 +1,6 @@
 import ansiParse from './ansi-parse'
 
-const ENCODED_NEWLINE = /\r{0,1}\n(?!\u0008)/
+const ENCODED_NEWLINE = /\r\n|\r|\n(?!\u0008)/
 
 // RegExp reference:
 // http://jafrog.com/2013/11/23/colors-in-terminal.html
