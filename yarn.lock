@@ -1350,6 +1350,11 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+ansicolor@^1.1.93:
+  version "1.1.93"
+  resolved "https://registry.npm.taobao.org/ansicolor/download/ansicolor-1.1.93.tgz#85f0d0925d84fa4aa1b3369b75a1376902416fec"
+  integrity sha1-hfDQkl2E+kqhszabdaE3aQJBb+w=
+
 ansicolors@~0.3.2:
   version "0.3.2"
   resolved "https://registry.npmjs.org/ansicolors/-/ansicolors-0.3.2.tgz#665597de86a9ffe3aa9bfbe6cae5c6ea426b4979"
